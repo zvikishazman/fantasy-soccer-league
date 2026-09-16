@@ -11,8 +11,9 @@ void main() {
     expect(find.text('Top managers'), findsOneWidget);
   });
 
-  testWidgets('mobile navigation reaches each view without layout exceptions',
-      (WidgetTester tester) async {
+  testWidgets('mobile navigation reaches each view without layout exceptions', (
+    WidgetTester tester,
+  ) async {
     tester.view.physicalSize = const Size(393, 852);
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.resetPhysicalSize);

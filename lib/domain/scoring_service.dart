@@ -10,7 +10,8 @@ class ScoringService {
   static const int captainMultiplier = 2;
 
   int playerPoints(Player player, {bool isCaptain = false}) {
-    final int points = player.goals * goalPoints +
+    final int points =
+        player.goals * goalPoints +
         player.assists * assistPoints +
         player.cleanSheets * cleanSheetPoints;
     return isCaptain ? points * captainMultiplier : points;

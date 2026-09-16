@@ -49,23 +49,32 @@ void main() {
       player,
       for (int i = 2; i <= 4; i++)
         Player(
-            id: '$i',
-            name: 'Player $i',
-            position: PlayerPosition.forward,
-            shirtColor: Colors.white,
-            value: 20,
-            goals: 1),
+          id: '$i',
+          name: 'Player $i',
+          position: PlayerPosition.forward,
+          shirtColor: Colors.white,
+          value: 20,
+          goals: 1,
+        ),
       const Player(
-          id: '5',
-          name: 'Inactive player',
-          position: PlayerPosition.goalkeeper,
-          shirtColor: Colors.blue,
-          value: 20),
+        id: '5',
+        name: 'Inactive player',
+        position: PlayerPosition.goalkeeper,
+        shirtColor: Colors.blue,
+        value: 20,
+      ),
     ];
     expect(
-        scoring.teamPoints(FantasyTeam(
-            name: 'Five', manager: 'Manager', players: squad, captainId: '1')),
-        18);
+      scoring.teamPoints(
+        FantasyTeam(
+          name: 'Five',
+          manager: 'Manager',
+          players: squad,
+          captainId: '1',
+        ),
+      ),
+      18,
+    );
     expect(scoring.playerPoints(squad.last, isCaptain: true), 0);
   });
 }

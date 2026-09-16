@@ -57,12 +57,32 @@ const FantasyTeam demoTeam = FantasyTeam(
 
 const List<Standing> demoStandings = <Standing>[
   Standing(
-      rank: 1, team: 'Ramat Gan United', manager: 'Zvi', points: 126, trend: 1),
+    rank: 1,
+    team: 'Ramat Gan United',
+    manager: 'Zvi',
+    points: 126,
+    trend: 1,
+  ),
   Standing(
-      rank: 2, team: 'Pressing FC', manager: 'Amit', points: 119, trend: -1),
+    rank: 2,
+    team: 'Pressing FC',
+    manager: 'Amit',
+    points: 119,
+    trend: -1,
+  ),
   Standing(
-      rank: 3, team: 'Sunday XI', manager: 'Daniel', points: 111, trend: 0),
+    rank: 3,
+    team: 'Sunday XI',
+    manager: 'Daniel',
+    points: 111,
+    trend: 0,
+  ),
   Standing(
-      rank: 4, team: 'Golden Boots', manager: 'Omer', points: 103, trend: 1),
+    rank: 4,
+    team: 'Golden Boots',
+    manager: 'Omer',
+    points: 103,
+    trend: 1,
+  ),
   Standing(rank: 5, team: 'High Line', manager: 'Noam', points: 96, trend: -1),
 ];

@@ -25,17 +25,13 @@ class Player {
   final int cleanSheets;
 
   String get positionLabel => switch (position) {
-        PlayerPosition.goalkeeper => 'GK',
-        PlayerPosition.defender => 'DEF',
-        PlayerPosition.midfielder => 'MID',
-        PlayerPosition.forward => 'FWD',
-      };
+    PlayerPosition.goalkeeper => 'GK',
+    PlayerPosition.defender => 'DEF',
+    PlayerPosition.midfielder => 'MID',
+    PlayerPosition.forward => 'FWD',
+  };
 
-  Player copyWith({
-    int? goals,
-    int? assists,
-    int? cleanSheets,
-  }) {
+  Player copyWith({int? goals, int? assists, int? cleanSheets}) {
     return Player(
       id: id,
       name: name,
