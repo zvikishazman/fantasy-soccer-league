@@ -1,0 +1,17 @@
+{
+  "name": "Fantasy Soccer League",
+  "short_name": "Fantasy Soccer",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0B1220",
+  "theme_color": "#43E6A0",
+  "description": "A demo-safe Flutter portfolio edition of a private fantasy soccer league product.",
+  "orientation": "any",
+  "prefer_related_applications": false,
+  "icons": [
+    {"src": "icons/Icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icons/Icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icons/Icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable"},
+    {"src": "icons/Icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
