@@ -28,6 +28,10 @@ lib/
 
 The historical product used Google Sign-In, Firebase Authentication and Firebase Realtime Database. Those integrations are intentionally excluded from this public demo because the transferred credentials were retired. See [docs/architecture.md](docs/architecture.md) for the production design and modernization decisions.
 
+## Demo scope
+
+This edition provides navigable, read-only views of the overview, squad, standings and administration concepts, plus executable scoring logic. It does not sign users in, persist changes, accept transfers or record match results. Rankings and match-cycle totals are synthetic fixtures. The Firebase-backed workflows described in the background section belong to the original product.
+
 ## Run locally
 
 Requirements: Flutter 3.19 or newer and Dart 3.3 or newer.
@@ -55,4 +59,3 @@ The first version was created as a working product for a real group of friends. 
 ## Security
 
 The public demo contains synthetic data only. Do not commit Firebase configuration, service-account keys, OAuth secrets or private league data. Report security concerns according to [SECURITY.md](SECURITY.md).
-
