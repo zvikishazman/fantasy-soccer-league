@@ -357,9 +357,11 @@ class _TeamPreview extends StatelessWidget {
           children: <Widget>[
             Row(
               children: <Widget>[
-                Text('Current squad',
-                    style: Theme.of(context).textTheme.headlineSmall),
-                const Spacer(),
+                Expanded(
+                  child: Text('Current squad',
+                      style: Theme.of(context).textTheme.headlineSmall),
+                ),
+                const SizedBox(width: 12),
                 DecoratedBox(
                   decoration: const BoxDecoration(
                       color: Color(0x2443E6A0),
